@@ -21,3 +21,14 @@ variable "private_subnet_cidrs" {
   description = "Private Subnet CIDR values"
   default     = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 }
+
+variable "instance_count" {
+  description = "Number of EC2 instances to deploy"
+  type        = number
+}
+
+variable "instance_type" {
+  description = "Type of EC2 instance to use"
+  type        = string
+}
+
